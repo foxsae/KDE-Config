@@ -1,0 +1,1 @@
+{Advanced Micro Devices/AMD Radeon RX 5700 XT (RADV NAVI10)/radv Mesa 24.2.5-cachyos1.2}=SUPPORTED

@@ -1,0 +1,13 @@
+[General]
+Default Identity=259022226
+
+[Identity #0]
+Default Domain=cachy-aurora
+Disable Fcc=false
+Identity=Foxsae
+Image Location=
+Inline Signature=
+Name=Foxsae
+Override Encryption Defaults=false
+Signature Enabled=false
+uoid=259022226

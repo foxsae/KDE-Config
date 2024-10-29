@@ -1,0 +1,801 @@
+[2024-10-29 00:16:29.738] [info]  [Electron Main] command line arguments {}
+[2024-10-29 00:16:29.741] [info]  [Electron Main] init services.
+[2024-10-29 00:16:29.741] [info]  [Electron Main] packagesDir: /home/foxsae/Apps/UHK/squashfs-root/resources
+[2024-10-29 00:16:29.788] [info]  [Electron Main] Create new window.
+[2024-10-29 00:16:29.789] [info]  [WindowState] load settings
+[2024-10-29 00:16:29.791] [info]  [WindowState] loaded settings undefined
+[2024-10-29 00:16:29.791] [info]  [WindowState]save state not exists, use default
+[2024-10-29 00:16:29.792] [info]  [SmartMacroService] starting...
+[2024-10-29 00:16:29.792] [info]  [SmartMacroCopy] start
+[2024-10-29 00:16:29.822] [info]  [SmartMacroCopy] copy {
+  destination: '/home/foxsae/.config/uhk-agent/smart-macro-docs/UltimateHackingKeyboard/firmware/v11.2.0',
+  smartMacroDocFirmwarePath: '/home/foxsae/Apps/UHK/squashfs-root/resources/packages/firmware/doc'
+}
+[2024-10-29 00:16:29.829] [info]  [SmartMacroCopy] done
+[2024-10-29 00:16:29.829] [info]  [SmartMacroCopy] start copy loading.html
+[2024-10-29 00:16:29.830] [info]  [SmartMacroCopy] end copy loading.html
+[2024-10-29 00:16:29.839] [info]  [SmartMacroService] get free TCP port
+[2024-10-29 00:16:29.841] [info]  [SmartMacroService] acquired TCP port: 35789
+[2024-10-29 00:16:29.857] [info]  [SmartMacroService] started on 35789.
+[2024-10-29 00:16:29.896] [info]  [DeviceService] init success
+[2024-10-29 00:16:29.896] [info]  [AppUpdateService] init success
+[2024-10-29 00:16:29.896] [info]  [AppService] init success
+[2024-10-29 00:16:29.897] [info]  [SudoService] App root dir:  /home/foxsae/Apps/UHK/squashfs-root/resources
+[2024-10-29 00:16:29.910] [info]  [DeviceService] Udev info: NeedToSetup
+[2024-10-29 00:16:30.011] [info]  [AppService] get-config: application-settings
+[2024-10-29 00:16:30.012] [info]  [AppService] get-config of "application-settings": undefined
+[2024-10-29 00:16:30.196] [info]  [DeviceRendererService] init success 
+[2024-10-29 00:16:30.198] [info]  [AppRendererService] init success 
+[2024-10-29 00:16:30.209] [info]  [MonacoEditorCompletionItemProvider] initialized.
+[2024-10-29 00:16:30.210] [info]  [SmartMacroDocRendererService] init success
+[2024-10-29 00:16:30.211] [info]  Renderer appStart effect start
+[2024-10-29 00:16:30.211] [info]  [AppRendererService] getAppStartInfo
+[2024-10-29 00:16:30.212] [info]  Renderer appStart effect end
+[2024-10-29 00:16:30.212] [info]  [SmartMacroService] getAppStartInfo
+[2024-10-29 00:16:30.213] [info]  [AppService] getAppStartInfo
+[2024-10-29 00:16:30.214] [info]  [AppService] get-config: application-settings
+[2024-10-29 00:16:30.215] [info]  [AppService] getAppStartInfo response: {
+  commandLineArgs: { 'disable-agent-update-protection': false },
+  platform: 'linux',
+  osVersion: '6.11.5-3-cachyos',
+  udevFileContent: '# Ultimate Hacking Keyboard rules\n' +
+    '# These are the udev rules for accessing the USB interfaces of the UHK as non-root users.\n' +
+    '# Copy this file to /etc/udev/rules.d and physically reconnect the UHK afterwards.\n' +
+    'SUBSYSTEM=="input", ATTRS{idVendor}=="1d50", ATTRS{idProduct}=="612[0-7]", GROUP="input", MODE="0660"\n' +
+    'SUBSYSTEMS=="usb", ATTRS{idVendor}=="1d50", ATTRS{idProduct}=="612[0-7]", TAG+="uaccess"\n' +
+    'KERNEL=="hidraw*", ATTRS{idVendor}=="1d50", ATTRS{idProduct}=="612[0-7]", TAG+="uaccess"\n'
+}
+[2024-10-29 00:16:30.216] [info]  [AppUpdateService] check for update at startup: { checkForUpdateOnStartUp: true }
+[2024-10-29 00:16:30.216] [info]  [AppUpdateService] app started. Automatically check for update.
+[2024-10-29 00:16:30.216] [info]  APPIMAGE env is not defined, current application is not an AppImage
+[2024-10-29 00:16:30.217] [info]  [AppUpdateService] checkForUpdate success
+[2024-10-29 00:16:30.217] [info]  [AppService] get-config of "application-settings": undefined
+[2024-10-29 00:16:30.280] [info]  [SmartMacroDocRendererService] dispatch action: [smart-macro-doc] service listening
+[2024-10-29 00:16:30.281] [info]  [AppRendererService] dispatch action: [app] process start info
+[2024-10-29 00:16:30.281] [info]  [AppEffect][processStartInfo] payload: {
+  commandLineArgs: { 'disable-agent-update-protection': false },
+  platform: 'linux',
+  osVersion: '6.11.5-3-cachyos',
+  udevFileContent: '# Ultimate Hacking Keyboard rules\n' +
+    '# These are the udev rules for accessing the USB interfaces of the UHK as non-root users.\n' +
+    '# Copy this file to /etc/udev/rules.d and physically reconnect the UHK afterwards.\n' +
+    'SUBSYSTEM=="input", ATTRS{idVendor}=="1d50", ATTRS{idProduct}=="612[0-7]", GROUP="input", MODE="0660"\n' +
+    'SUBSYSTEMS=="usb", ATTRS{idVendor}=="1d50", ATTRS{idProduct}=="612[0-7]", TAG+="uaccess"\n' +
+    'KERNEL=="hidraw*", ATTRS{idVendor}=="1d50", ATTRS{idProduct}=="612[0-7]", TAG+="uaccess"\n'
+}
+[2024-10-29 00:16:30.283] [info]  [DeviceService] start poll UHK Device
+[2024-10-29 00:16:30.405] [info]  [UhkHidDevice] Devices before checking permission:
+[2024-10-29 00:16:30.411] [info]  [UhkHidDevice] Available devices changed.
+[2024-10-29 00:16:30.412] [info]  [UhkHidDevice] Added: {"vendorId":"0x1D50","productId":"0x6122","path":"/dev/hidraw0","serialNumber":"","manufacturer":"Ultimate Gadget Laboratories","product":"UHK 60 v1","release":258,"interface":0,"usagePage":65280,"usage":1}
+[2024-10-29 00:16:30.412] [info]  [UhkHidDevice] Added: {"vendorId":"0x1D50","productId":"0x6122","path":"/dev/hidraw1","serialNumber":"","manufacturer":"Ultimate Gadget Laboratories","product":"UHK 60 v1","release":258,"interface":1,"usagePage":1,"usage":6}
+[2024-10-29 00:16:30.412] [info]  [UhkHidDevice] Added: {"vendorId":"0x1D50","productId":"0x6122","path":"/dev/hidraw2","serialNumber":"","manufacturer":"Ultimate Gadget Laboratories","product":"UHK 60 v1","release":258,"interface":2,"usagePage":12,"usage":1}
+[2024-10-29 00:16:30.413] [info]  [UhkHidDevice] Added: {"vendorId":"0x1D50","productId":"0x6122","path":"/dev/hidraw3","serialNumber":"","manufacturer":"Ultimate Gadget Laboratories","product":"UHK 60 v1","release":258,"interface":3,"usagePage":1,"usage":128}
+[2024-10-29 00:16:30.413] [info]  [UhkHidDevice] Added: {"vendorId":"0x1D50","productId":"0x6122","path":"/dev/hidraw5","serialNumber":"","manufacturer":"Ultimate Gadget Laboratories","product":"UHK 60 v1","release":258,"interface":5,"usagePage":1,"usage":5}
+[2024-10-29 00:16:30.413] [error] [UhkHidDevice] hasPermission TypeError: cannot open device with path /dev/hidraw0
+    at new HID (/home/foxsae/Apps/UHK/squashfs-root/resources/app.asar/node_modules/node-hid/nodehid.js:47:17)
+    at Object.hasPermission (/home/foxsae/Apps/UHK/squashfs-root/resources/app.asar/electron-main.js:2:594218)
+    at async Object.getDeviceConnectionStateAsync (/home/foxsae/Apps/UHK/squashfs-root/resources/app.asar/electron-main.js:2:594507)
+    at async Ai.uhkDevicePoller (/home/foxsae/Apps/UHK/squashfs-root/resources/app.asar/electron-main.js:2:501223)
+[2024-10-29 00:16:30.421] [info]  [DeviceService] Device connection state changed to: {
+  bootloaderActive: false,
+  communicationInterfaceAvailable: true,
+  hasPermission: false,
+  halvesInfo: {
+    areHalvesMerged: true,
+    leftModuleSlot: 0,
+    isLeftHalfConnected: true,
+    rightModuleSlot: 0
+  },
+  hardwareModules: { moduleInfos: [], rightModuleInfo: { modules: {} } },
+  isMacroStatusDirty: false,
+  multiDevice: false,
+  connectedDevice: {
+    id: 1,
+    name: 'UHK 60 v1',
+    vendorId: 7504,
+    keyboardPid: 24866,
+    bootloaderPid: 24864,
+    buspalPid: 24865
+  }
+}
+[2024-10-29 00:16:30.463] [info]  [DeviceRendererService] dispatch action [device] connection state changed
+[2024-10-29 00:16:30.469] [info]  [SmartMacroDocRendererService] downloadDocumentation
+[2024-10-29 00:16:30.470] [info]  [SmartMacroService] skip download firmware documentation because git repo or tag missing { firmwareGitRepo: '', firmwareGitTag: '' }
+[2024-10-29 00:16:30.684] [info]  [UhkHidDevice] Devices before checking permission:
+[2024-10-29 00:16:30.697] [info]  [UhkHidDevice] Available devices unchanged
+[2024-10-29 00:16:30.697] [error] [UhkHidDevice] hasPermission TypeError: cannot open device with path /dev/hidraw0
+    at new HID (/home/foxsae/Apps/UHK/squashfs-root/resources/app.asar/node_modules/node-hid/nodehid.js:47:17)
+    at Object.hasPermission (/home/foxsae/Apps/UHK/squashfs-root/resources/app.asar/electron-main.js:2:594218)
+    at async Object.getDeviceConnectionStateAsync (/home/foxsae/Apps/UHK/squashfs-root/resources/app.asar/electron-main.js:2:594507)
+    at async Ai.uhkDevicePoller (/home/foxsae/Apps/UHK/squashfs-root/resources/app.asar/electron-main.js:2:501223)
+[2024-10-29 00:16:30.973] [info]  [UhkHidDevice] Devices before checking permission:
+[2024-10-29 00:16:30.985] [info]  [UhkHidDevice] Available devices unchanged
+[2024-10-29 00:16:30.986] [error] [UhkHidDevice] hasPermission TypeError: cannot open device with path /dev/hidraw0
+    at new HID (/home/foxsae/Apps/UHK/squashfs-root/resources/app.asar/node_modules/node-hid/nodehid.js:47:17)
+    at Object.hasPermission (/home/foxsae/Apps/UHK/squashfs-root/resources/app.asar/electron-main.js:2:594218)
+    at async Object.getDeviceConnectionStateAsync (/home/foxsae/Apps/UHK/squashfs-root/resources/app.asar/electron-main.js:2:594507)
+    at async Ai.uhkDevicePoller (/home/foxsae/Apps/UHK/squashfs-root/resources/app.asar/electron-main.js:2:501223)
+[2024-10-29 00:16:31.262] [info]  [UhkHidDevice] Devices before checking permission:
+[2024-10-29 00:16:31.273] [info]  [UhkHidDevice] Available devices unchanged
+[2024-10-29 00:16:31.273] [error] [UhkHidDevice] hasPermission TypeError: cannot open device with path /dev/hidraw0
+    at new HID (/home/foxsae/Apps/UHK/squashfs-root/resources/app.asar/node_modules/node-hid/nodehid.js:47:17)
+    at Object.hasPermission (/home/foxsae/Apps/UHK/squashfs-root/resources/app.asar/electron-main.js:2:594218)
+    at async Object.getDeviceConnectionStateAsync (/home/foxsae/Apps/UHK/squashfs-root/resources/app.asar/electron-main.js:2:594507)
+    at async Ai.uhkDevicePoller (/home/foxsae/Apps/UHK/squashfs-root/resources/app.asar/electron-main.js:2:501223)
+[2024-10-29 00:16:31.548] [info]  [UhkHidDevice] Devices before checking permission:
+[2024-10-29 00:16:31.562] [info]  [UhkHidDevice] Available devices unchanged
+[2024-10-29 00:16:31.562] [error] [UhkHidDevice] hasPermission TypeError: cannot open device with path /dev/hidraw0
+    at new HID (/home/foxsae/Apps/UHK/squashfs-root/resources/app.asar/node_modules/node-hid/nodehid.js:47:17)
+    at Object.hasPermission (/home/foxsae/Apps/UHK/squashfs-root/resources/app.asar/electron-main.js:2:594218)
+    at async Object.getDeviceConnectionStateAsync (/home/foxsae/Apps/UHK/squashfs-root/resources/app.asar/electron-main.js:2:594507)
+    at async Ai.uhkDevicePoller (/home/foxsae/Apps/UHK/squashfs-root/resources/app.asar/electron-main.js:2:501223)
+[2024-10-29 00:16:31.838] [info]  [UhkHidDevice] Devices before checking permission:
+[2024-10-29 00:16:31.852] [info]  [UhkHidDevice] Available devices unchanged
+[2024-10-29 00:16:31.852] [error] [UhkHidDevice] hasPermission TypeError: cannot open device with path /dev/hidraw0
+    at new HID (/home/foxsae/Apps/UHK/squashfs-root/resources/app.asar/node_modules/node-hid/nodehid.js:47:17)
+    at Object.hasPermission (/home/foxsae/Apps/UHK/squashfs-root/resources/app.asar/electron-main.js:2:594218)
+    at async Object.getDeviceConnectionStateAsync (/home/foxsae/Apps/UHK/squashfs-root/resources/app.asar/electron-main.js:2:594507)
+    at async Ai.uhkDevicePoller (/home/foxsae/Apps/UHK/squashfs-root/resources/app.asar/electron-main.js:2:501223)
+[2024-10-29 00:16:32.127] [info]  [UhkHidDevice] Devices before checking permission:
+[2024-10-29 00:16:32.140] [info]  [UhkHidDevice] Available devices unchanged
+[2024-10-29 00:16:32.140] [error] [UhkHidDevice] hasPermission TypeError: cannot open device with path /dev/hidraw0
+    at new HID (/home/foxsae/Apps/UHK/squashfs-root/resources/app.asar/node_modules/node-hid/nodehid.js:47:17)
+    at Object.hasPermission (/home/foxsae/Apps/UHK/squashfs-root/resources/app.asar/electron-main.js:2:594218)
+    at async Object.getDeviceConnectionStateAsync (/home/foxsae/Apps/UHK/squashfs-root/resources/app.asar/electron-main.js:2:594507)
+    at async Ai.uhkDevicePoller (/home/foxsae/Apps/UHK/squashfs-root/resources/app.asar/electron-main.js:2:501223)
+[2024-10-29 00:16:32.416] [info]  [UhkHidDevice] Devices before checking permission:
+[2024-10-29 00:16:32.428] [info]  [UhkHidDevice] Available devices unchanged
+[2024-10-29 00:16:32.429] [error] [UhkHidDevice] hasPermission TypeError: cannot open device with path /dev/hidraw0
+    at new HID (/home/foxsae/Apps/UHK/squashfs-root/resources/app.asar/node_modules/node-hid/nodehid.js:47:17)
+    at Object.hasPermission (/home/foxsae/Apps/UHK/squashfs-root/resources/app.asar/electron-main.js:2:594218)
+    at async Object.getDeviceConnectionStateAsync (/home/foxsae/Apps/UHK/squashfs-root/resources/app.asar/electron-main.js:2:594507)
+    at async Ai.uhkDevicePoller (/home/foxsae/Apps/UHK/squashfs-root/resources/app.asar/electron-main.js:2:501223)
+[2024-10-29 00:16:32.699] [info]  [UhkHidDevice] Devices before checking permission:
+[2024-10-29 00:16:32.712] [info]  [UhkHidDevice] Available devices unchanged
+[2024-10-29 00:16:32.712] [error] [UhkHidDevice] hasPermission TypeError: cannot open device with path /dev/hidraw0
+    at new HID (/home/foxsae/Apps/UHK/squashfs-root/resources/app.asar/node_modules/node-hid/nodehid.js:47:17)
+    at Object.hasPermission (/home/foxsae/Apps/UHK/squashfs-root/resources/app.asar/electron-main.js:2:594218)
+    at async Object.getDeviceConnectionStateAsync (/home/foxsae/Apps/UHK/squashfs-root/resources/app.asar/electron-main.js:2:594507)
+    at async Ai.uhkDevicePoller (/home/foxsae/Apps/UHK/squashfs-root/resources/app.asar/electron-main.js:2:501223)
+[2024-10-29 00:16:32.988] [info]  [UhkHidDevice] Devices before checking permission:
+[2024-10-29 00:16:33.001] [info]  [UhkHidDevice] Available devices unchanged
+[2024-10-29 00:16:33.001] [error] [UhkHidDevice] hasPermission TypeError: cannot open device with path /dev/hidraw0
+    at new HID (/home/foxsae/Apps/UHK/squashfs-root/resources/app.asar/node_modules/node-hid/nodehid.js:47:17)
+    at Object.hasPermission (/home/foxsae/Apps/UHK/squashfs-root/resources/app.asar/electron-main.js:2:594218)
+    at async Object.getDeviceConnectionStateAsync (/home/foxsae/Apps/UHK/squashfs-root/resources/app.asar/electron-main.js:2:594507)
+    at async Ai.uhkDevicePoller (/home/foxsae/Apps/UHK/squashfs-root/resources/app.asar/electron-main.js:2:501223)
+[2024-10-29 00:16:33.273] [info]  [UhkHidDevice] Devices before checking permission:
+[2024-10-29 00:16:33.284] [info]  [UhkHidDevice] Available devices unchanged
+[2024-10-29 00:16:33.285] [error] [UhkHidDevice] hasPermission TypeError: cannot open device with path /dev/hidraw0
+    at new HID (/home/foxsae/Apps/UHK/squashfs-root/resources/app.asar/node_modules/node-hid/nodehid.js:47:17)
+    at Object.hasPermission (/home/foxsae/Apps/UHK/squashfs-root/resources/app.asar/electron-main.js:2:594218)
+    at async Object.getDeviceConnectionStateAsync (/home/foxsae/Apps/UHK/squashfs-root/resources/app.asar/electron-main.js:2:594507)
+    at async Ai.uhkDevicePoller (/home/foxsae/Apps/UHK/squashfs-root/resources/app.asar/electron-main.js:2:501223)
+[2024-10-29 00:16:33.562] [info]  [UhkHidDevice] Devices before checking permission:
+[2024-10-29 00:16:33.575] [info]  [UhkHidDevice] Available devices unchanged
+[2024-10-29 00:16:33.575] [error] [UhkHidDevice] hasPermission TypeError: cannot open device with path /dev/hidraw0
+    at new HID (/home/foxsae/Apps/UHK/squashfs-root/resources/app.asar/node_modules/node-hid/nodehid.js:47:17)
+    at Object.hasPermission (/home/foxsae/Apps/UHK/squashfs-root/resources/app.asar/electron-main.js:2:594218)
+    at async Object.getDeviceConnectionStateAsync (/home/foxsae/Apps/UHK/squashfs-root/resources/app.asar/electron-main.js:2:594507)
+    at async Ai.uhkDevicePoller (/home/foxsae/Apps/UHK/squashfs-root/resources/app.asar/electron-main.js:2:501223)
+[2024-10-29 00:16:33.844] [info]  [UhkHidDevice] Devices before checking permission:
+[2024-10-29 00:16:33.857] [info]  [UhkHidDevice] Available devices unchanged
+[2024-10-29 00:16:33.858] [error] [UhkHidDevice] hasPermission TypeError: cannot open device with path /dev/hidraw0
+    at new HID (/home/foxsae/Apps/UHK/squashfs-root/resources/app.asar/node_modules/node-hid/nodehid.js:47:17)
+    at Object.hasPermission (/home/foxsae/Apps/UHK/squashfs-root/resources/app.asar/electron-main.js:2:594218)
+    at async Object.getDeviceConnectionStateAsync (/home/foxsae/Apps/UHK/squashfs-root/resources/app.asar/electron-main.js:2:594507)
+    at async Ai.uhkDevicePoller (/home/foxsae/Apps/UHK/squashfs-root/resources/app.asar/electron-main.js:2:501223)
+[2024-10-29 00:16:34.129] [info]  [UhkHidDevice] Devices before checking permission:
+[2024-10-29 00:16:34.141] [info]  [UhkHidDevice] Available devices unchanged
+[2024-10-29 00:16:34.141] [error] [UhkHidDevice] hasPermission TypeError: cannot open device with path /dev/hidraw0
+    at new HID (/home/foxsae/Apps/UHK/squashfs-root/resources/app.asar/node_modules/node-hid/nodehid.js:47:17)
+    at Object.hasPermission (/home/foxsae/Apps/UHK/squashfs-root/resources/app.asar/electron-main.js:2:594218)
+    at async Object.getDeviceConnectionStateAsync (/home/foxsae/Apps/UHK/squashfs-root/resources/app.asar/electron-main.js:2:594507)
+    at async Ai.uhkDevicePoller (/home/foxsae/Apps/UHK/squashfs-root/resources/app.asar/electron-main.js:2:501223)
+[2024-10-29 00:16:34.410] [info]  [UhkHidDevice] Devices before checking permission:
+[2024-10-29 00:16:34.420] [info]  [UhkHidDevice] Available devices unchanged
+[2024-10-29 00:16:34.420] [error] [UhkHidDevice] hasPermission TypeError: cannot open device with path /dev/hidraw0
+    at new HID (/home/foxsae/Apps/UHK/squashfs-root/resources/app.asar/node_modules/node-hid/nodehid.js:47:17)
+    at Object.hasPermission (/home/foxsae/Apps/UHK/squashfs-root/resources/app.asar/electron-main.js:2:594218)
+    at async Object.getDeviceConnectionStateAsync (/home/foxsae/Apps/UHK/squashfs-root/resources/app.asar/electron-main.js:2:594507)
+    at async Ai.uhkDevicePoller (/home/foxsae/Apps/UHK/squashfs-root/resources/app.asar/electron-main.js:2:501223)
+[2024-10-29 00:16:34.695] [info]  [UhkHidDevice] Devices before checking permission:
+[2024-10-29 00:16:34.702] [info]  [UhkHidDevice] Available devices unchanged
+[2024-10-29 00:16:34.702] [error] [UhkHidDevice] hasPermission TypeError: cannot open device with path /dev/hidraw0
+    at new HID (/home/foxsae/Apps/UHK/squashfs-root/resources/app.asar/node_modules/node-hid/nodehid.js:47:17)
+    at Object.hasPermission (/home/foxsae/Apps/UHK/squashfs-root/resources/app.asar/electron-main.js:2:594218)
+    at async Object.getDeviceConnectionStateAsync (/home/foxsae/Apps/UHK/squashfs-root/resources/app.asar/electron-main.js:2:594507)
+    at async Ai.uhkDevicePoller (/home/foxsae/Apps/UHK/squashfs-root/resources/app.asar/electron-main.js:2:501223)
+[2024-10-29 00:16:34.977] [info]  [UhkHidDevice] Devices before checking permission:
+[2024-10-29 00:16:34.989] [info]  [UhkHidDevice] Available devices unchanged
+[2024-10-29 00:16:34.990] [error] [UhkHidDevice] hasPermission TypeError: cannot open device with path /dev/hidraw0
+    at new HID (/home/foxsae/Apps/UHK/squashfs-root/resources/app.asar/node_modules/node-hid/nodehid.js:47:17)
+    at Object.hasPermission (/home/foxsae/Apps/UHK/squashfs-root/resources/app.asar/electron-main.js:2:594218)
+    at async Object.getDeviceConnectionStateAsync (/home/foxsae/Apps/UHK/squashfs-root/resources/app.asar/electron-main.js:2:594507)
+    at async Ai.uhkDevicePoller (/home/foxsae/Apps/UHK/squashfs-root/resources/app.asar/electron-main.js:2:501223)
+[2024-10-29 00:16:35.260] [info]  [UhkHidDevice] Devices before checking permission:
+[2024-10-29 00:16:35.273] [info]  [UhkHidDevice] Available devices unchanged
+[2024-10-29 00:16:35.273] [error] [UhkHidDevice] hasPermission TypeError: cannot open device with path /dev/hidraw0
+    at new HID (/home/foxsae/Apps/UHK/squashfs-root/resources/app.asar/node_modules/node-hid/nodehid.js:47:17)
+    at Object.hasPermission (/home/foxsae/Apps/UHK/squashfs-root/resources/app.asar/electron-main.js:2:594218)
+    at async Object.getDeviceConnectionStateAsync (/home/foxsae/Apps/UHK/squashfs-root/resources/app.asar/electron-main.js:2:594507)
+    at async Ai.uhkDevicePoller (/home/foxsae/Apps/UHK/squashfs-root/resources/app.asar/electron-main.js:2:501223)
+[2024-10-29 00:16:35.544] [info]  [UhkHidDevice] Devices before checking permission:
+[2024-10-29 00:16:35.555] [info]  [UhkHidDevice] Available devices unchanged
+[2024-10-29 00:16:35.556] [error] [UhkHidDevice] hasPermission TypeError: cannot open device with path /dev/hidraw0
+    at new HID (/home/foxsae/Apps/UHK/squashfs-root/resources/app.asar/node_modules/node-hid/nodehid.js:47:17)
+    at Object.hasPermission (/home/foxsae/Apps/UHK/squashfs-root/resources/app.asar/electron-main.js:2:594218)
+    at async Object.getDeviceConnectionStateAsync (/home/foxsae/Apps/UHK/squashfs-root/resources/app.asar/electron-main.js:2:594507)
+    at async Ai.uhkDevicePoller (/home/foxsae/Apps/UHK/squashfs-root/resources/app.asar/electron-main.js:2:501223)
+[2024-10-29 00:16:35.831] [info]  [UhkHidDevice] Devices before checking permission:
+[2024-10-29 00:16:35.844] [info]  [UhkHidDevice] Available devices unchanged
+[2024-10-29 00:16:35.845] [error] [UhkHidDevice] hasPermission TypeError: cannot open device with path /dev/hidraw0
+    at new HID (/home/foxsae/Apps/UHK/squashfs-root/resources/app.asar/node_modules/node-hid/nodehid.js:47:17)
+    at Object.hasPermission (/home/foxsae/Apps/UHK/squashfs-root/resources/app.asar/electron-main.js:2:594218)
+    at async Object.getDeviceConnectionStateAsync (/home/foxsae/Apps/UHK/squashfs-root/resources/app.asar/electron-main.js:2:594507)
+    at async Ai.uhkDevicePoller (/home/foxsae/Apps/UHK/squashfs-root/resources/app.asar/electron-main.js:2:501223)
+[2024-10-29 00:16:36.120] [info]  [UhkHidDevice] Devices before checking permission:
+[2024-10-29 00:16:36.133] [info]  [UhkHidDevice] Available devices unchanged
+[2024-10-29 00:16:36.133] [error] [UhkHidDevice] hasPermission TypeError: cannot open device with path /dev/hidraw0
+    at new HID (/home/foxsae/Apps/UHK/squashfs-root/resources/app.asar/node_modules/node-hid/nodehid.js:47:17)
+    at Object.hasPermission (/home/foxsae/Apps/UHK/squashfs-root/resources/app.asar/electron-main.js:2:594218)
+    at async Object.getDeviceConnectionStateAsync (/home/foxsae/Apps/UHK/squashfs-root/resources/app.asar/electron-main.js:2:594507)
+    at async Ai.uhkDevicePoller (/home/foxsae/Apps/UHK/squashfs-root/resources/app.asar/electron-main.js:2:501223)
+[2024-10-29 00:16:36.404] [info]  [UhkHidDevice] Devices before checking permission:
+[2024-10-29 00:16:36.416] [info]  [UhkHidDevice] Available devices unchanged
+[2024-10-29 00:16:36.417] [error] [UhkHidDevice] hasPermission TypeError: cannot open device with path /dev/hidraw0
+    at new HID (/home/foxsae/Apps/UHK/squashfs-root/resources/app.asar/node_modules/node-hid/nodehid.js:47:17)
+    at Object.hasPermission (/home/foxsae/Apps/UHK/squashfs-root/resources/app.asar/electron-main.js:2:594218)
+    at async Object.getDeviceConnectionStateAsync (/home/foxsae/Apps/UHK/squashfs-root/resources/app.asar/electron-main.js:2:594507)
+    at async Ai.uhkDevicePoller (/home/foxsae/Apps/UHK/squashfs-root/resources/app.asar/electron-main.js:2:501223)
+[2024-10-29 00:16:36.693] [info]  [UhkHidDevice] Devices before checking permission:
+[2024-10-29 00:16:36.704] [info]  [UhkHidDevice] Available devices unchanged
+[2024-10-29 00:16:36.705] [error] [UhkHidDevice] hasPermission TypeError: cannot open device with path /dev/hidraw0
+    at new HID (/home/foxsae/Apps/UHK/squashfs-root/resources/app.asar/node_modules/node-hid/nodehid.js:47:17)
+    at Object.hasPermission (/home/foxsae/Apps/UHK/squashfs-root/resources/app.asar/electron-main.js:2:594218)
+    at async Object.getDeviceConnectionStateAsync (/home/foxsae/Apps/UHK/squashfs-root/resources/app.asar/electron-main.js:2:594507)
+    at async Ai.uhkDevicePoller (/home/foxsae/Apps/UHK/squashfs-root/resources/app.asar/electron-main.js:2:501223)
+[2024-10-29 00:16:36.979] [info]  [UhkHidDevice] Devices before checking permission:
+[2024-10-29 00:16:36.987] [info]  [UhkHidDevice] Available devices unchanged
+[2024-10-29 00:16:36.988] [error] [UhkHidDevice] hasPermission TypeError: cannot open device with path /dev/hidraw0
+    at new HID (/home/foxsae/Apps/UHK/squashfs-root/resources/app.asar/node_modules/node-hid/nodehid.js:47:17)
+    at Object.hasPermission (/home/foxsae/Apps/UHK/squashfs-root/resources/app.asar/electron-main.js:2:594218)
+    at async Object.getDeviceConnectionStateAsync (/home/foxsae/Apps/UHK/squashfs-root/resources/app.asar/electron-main.js:2:594507)
+    at async Ai.uhkDevicePoller (/home/foxsae/Apps/UHK/squashfs-root/resources/app.asar/electron-main.js:2:501223)
+[2024-10-29 00:16:37.264] [info]  [UhkHidDevice] Devices before checking permission:
+[2024-10-29 00:16:37.276] [info]  [UhkHidDevice] Available devices unchanged
+[2024-10-29 00:16:37.277] [error] [UhkHidDevice] hasPermission TypeError: cannot open device with path /dev/hidraw0
+    at new HID (/home/foxsae/Apps/UHK/squashfs-root/resources/app.asar/node_modules/node-hid/nodehid.js:47:17)
+    at Object.hasPermission (/home/foxsae/Apps/UHK/squashfs-root/resources/app.asar/electron-main.js:2:594218)
+    at async Object.getDeviceConnectionStateAsync (/home/foxsae/Apps/UHK/squashfs-root/resources/app.asar/electron-main.js:2:594507)
+    at async Ai.uhkDevicePoller (/home/foxsae/Apps/UHK/squashfs-root/resources/app.asar/electron-main.js:2:501223)
+[2024-10-29 00:16:37.549] [info]  [UhkHidDevice] Devices before checking permission:
+[2024-10-29 00:16:37.562] [info]  [UhkHidDevice] Available devices unchanged
+[2024-10-29 00:16:37.562] [error] [UhkHidDevice] hasPermission TypeError: cannot open device with path /dev/hidraw0
+    at new HID (/home/foxsae/Apps/UHK/squashfs-root/resources/app.asar/node_modules/node-hid/nodehid.js:47:17)
+    at Object.hasPermission (/home/foxsae/Apps/UHK/squashfs-root/resources/app.asar/electron-main.js:2:594218)
+    at async Object.getDeviceConnectionStateAsync (/home/foxsae/Apps/UHK/squashfs-root/resources/app.asar/electron-main.js:2:594507)
+    at async Ai.uhkDevicePoller (/home/foxsae/Apps/UHK/squashfs-root/resources/app.asar/electron-main.js:2:501223)
+[2024-10-29 00:16:37.786] [info]  [DeviceService] stop poll UHK Device
+[2024-10-29 00:16:37.786] [info]  [DeviceService] stopped poll UHK Device
+[2024-10-29 00:16:37.787] [info]  [SudoService] Copy rules dir {
+  src: '/home/foxsae/Apps/UHK/squashfs-root/resources/rules',
+  dst: '/tmp/tmp-3817-2LXniD5JbsuH'
+}
+[2024-10-29 00:16:37.790] [info]  [SudoService] Set privilege command:  sh /tmp/tmp-3817-2LXniD5JbsuH/setup-rules.sh
+[2024-10-29 00:16:50.105] [info]  [DeviceService] start poll UHK Device
+[2024-10-29 00:16:50.106] [info]  [DeviceRendererService] dispatch action [device] set privilege on linux reply
+[2024-10-29 00:16:50.106] [info]  [AppRendererService] getAppStartInfo
+[2024-10-29 00:16:50.107] [info]  [SmartMacroService] getAppStartInfo
+[2024-10-29 00:16:50.107] [info]  [AppService] getAppStartInfo
+[2024-10-29 00:16:50.107] [info]  [SmartMacroDocRendererService] dispatch action: [smart-macro-doc] service listening
+[2024-10-29 00:16:50.107] [info]  [AppService] getAppStartInfo response: {
+  commandLineArgs: { 'disable-agent-update-protection': false },
+  platform: 'linux',
+  osVersion: '6.11.5-3-cachyos',
+  udevFileContent: '# Ultimate Hacking Keyboard rules\n' +
+    '# These are the udev rules for accessing the USB interfaces of the UHK as non-root users.\n' +
+    '# Copy this file to /etc/udev/rules.d and physically reconnect the UHK afterwards.\n' +
+    'SUBSYSTEM=="input", ATTRS{idVendor}=="1d50", ATTRS{idProduct}=="612[0-7]", GROUP="input", MODE="0660"\n' +
+    'SUBSYSTEMS=="usb", ATTRS{idVendor}=="1d50", ATTRS{idProduct}=="612[0-7]", TAG+="uaccess"\n' +
+    'KERNEL=="hidraw*", ATTRS{idVendor}=="1d50", ATTRS{idProduct}=="612[0-7]", TAG+="uaccess"\n'
+}
+[2024-10-29 00:16:50.108] [info]  [AppRendererService] dispatch action: [app] process start info
+[2024-10-29 00:16:50.108] [info]  [AppEffect][processStartInfo] payload: {
+  commandLineArgs: { 'disable-agent-update-protection': false },
+  platform: 'linux',
+  osVersion: '6.11.5-3-cachyos',
+  udevFileContent: '# Ultimate Hacking Keyboard rules\n' +
+    '# These are the udev rules for accessing the USB interfaces of the UHK as non-root users.\n' +
+    '# Copy this file to /etc/udev/rules.d and physically reconnect the UHK afterwards.\n' +
+    'SUBSYSTEM=="input", ATTRS{idVendor}=="1d50", ATTRS{idProduct}=="612[0-7]", GROUP="input", MODE="0660"\n' +
+    'SUBSYSTEMS=="usb", ATTRS{idVendor}=="1d50", ATTRS{idProduct}=="612[0-7]", TAG+="uaccess"\n' +
+    'KERNEL=="hidraw*", ATTRS{idVendor}=="1d50", ATTRS{idProduct}=="612[0-7]", TAG+="uaccess"\n'
+}
+[2024-10-29 00:16:50.108] [info]  [DeviceService] start poll UHK Device
+[2024-10-29 00:16:50.348] [info]  [UhkHidDevice] Devices before checking permission:
+[2024-10-29 00:16:50.360] [info]  [UhkHidDevice] Available devices unchanged
+[2024-10-29 00:16:50.435] [info]  [UhkHidDevice] Available devices unchanged
+[2024-10-29 00:16:50.487] [info]  [UhkHidDevice] Used device: {"vendorId":"0x1D50","productId":"0x6122","path":"/dev/hidraw0","serialNumber":"","manufacturer":"Ultimate Gadget Laboratories","product":"UHK 60 v1","release":258,"interface":0,"usagePage":65280,"usage":1}
+[2024-10-29 00:16:50.496] [info]  [DeviceOperation] right module deviceProtocolVersion: 4.8.0
+[2024-10-29 00:16:50.504] [info]  [DeviceOperation] Read "leftHalf" version information
+[2024-10-29 00:16:50.506] [info]  [DeviceOperation] Read "leftHalf" repo information
+[2024-10-29 00:16:50.510] [info]  [DeviceRendererService] dispatch action [device] connection state changed
+[2024-10-29 00:16:50.510] [info]  [DeviceService] Device connection state changed to: {
+  bootloaderActive: false,
+  communicationInterfaceAvailable: true,
+  hasPermission: true,
+  halvesInfo: {
+    areHalvesMerged: false,
+    isLeftHalfConnected: true,
+    leftModuleSlot: 0,
+    rightModuleSlot: 0
+  },
+  hardwareModules: {
+    moduleInfos: [
+      {
+        module: {
+          id: 1,
+          name: 'Left keyboard half',
+          slotId: 1,
+          i2cAddress: 16,
+          firmwareUpgradeSupported: true
+        },
+        info: {
+          moduleProtocolVersion: '4.2.0',
+          firmwareVersion: '9.1.2',
+          firmwareGitRepo: 'UltimateHackingKeyboard/firmware',
+          firmwareGitTag: 'v9.1.2'
+        }
+      }
+    ],
+    rightModuleInfo: {
+      firmwareVersion: '9.1.2',
+      deviceProtocolVersion: '4.8.0',
+      moduleProtocolVersion: '4.2.0',
+      modules: {},
+      userConfigVersion: '5.1.0',
+      hardwareConfigVersion: '1.0.0',
+      smartMacrosVersion: '1.0.1',
+      firmwareGitRepo: 'UltimateHackingKeyboard/firmware',
+      firmwareGitTag: 'v9.1.2'
+    }
+  },
+  isMacroStatusDirty: false,
+  multiDevice: false,
+  connectedDevice: {
+    id: 1,
+    name: 'UHK 60 v1',
+    vendorId: 7504,
+    keyboardPid: 24866,
+    bootloaderPid: 24864,
+    buspalPid: 24865
+  }
+}
+[2024-10-29 00:16:50.520] [info]  [SmartMacroDocRendererService] downloadDocumentation
+[2024-10-29 00:16:50.520] [info]  [SmartMacroService] start download firmware documentation {
+  firmwareGitRepo: 'UltimateHackingKeyboard/firmware',
+  firmwareGitTag: 'v9.1.2'
+}
+[2024-10-29 00:16:50.521] [info]  [DeviceService] stop poll UHK Device
+[2024-10-29 00:16:50.521] [info]  [DeviceService] stopped poll UHK Device
+[2024-10-29 00:16:50.522] [info]  [SmartMacroService] firmware documentation downloading
+[2024-10-29 00:16:50.557] [info]  [UhkHidDevice] Device communication closing.
+[2024-10-29 00:16:50.557] [info]  [UhkHidDevice] Device communication closed.
+[2024-10-29 00:16:50.558] [info]  [DeviceService] start poll UHK Device
+[2024-10-29 00:16:50.558] [info]  [DeviceService] load user configuration
+[2024-10-29 00:16:50.558] [info]  [DeviceRendererService] dispatch action [device] Read config sizes reply
+[2024-10-29 00:16:50.558] [info]  [DeviceService] stop poll UHK Device
+[2024-10-29 00:16:50.558] [info]  [DeviceService] stopped poll UHK Device
+[2024-10-29 00:16:50.571] [info]  [UhkHidDevice] Available devices unchanged
+[2024-10-29 00:16:50.623] [info]  [UhkHidDevice] Used device: {"vendorId":"0x1D50","productId":"0x6122","path":"/dev/hidraw0","serialNumber":"","manufacturer":"Ultimate Gadget Laboratories","product":"UHK 60 v1","release":258,"interface":0,"usagePage":65280,"usage":1}
+[2024-10-29 00:16:50.629] [info]  [UhkHidDevice] Device communication closing.
+[2024-10-29 00:16:50.630] [info]  [UhkHidDevice] Device communication closed.
+[2024-10-29 00:16:50.630] [info]  [DeviceOperation] User config size: 32704
+[2024-10-29 00:16:50.643] [info]  [UhkHidDevice] Available devices unchanged
+[2024-10-29 00:16:50.695] [info]  [UhkHidDevice] Used device: {"vendorId":"0x1D50","productId":"0x6122","path":"/dev/hidraw0","serialNumber":"","manufacturer":"Ultimate Gadget Laboratories","product":"UHK 60 v1","release":258,"interface":0,"usagePage":65280,"usage":1}
+[2024-10-29 00:16:50.698] [info]  [DeviceOperation] userConfigSize: 3915
+[2024-10-29 00:16:50.824] [info]  [UhkHidDevice] Device communication closing.
+[2024-10-29 00:16:50.825] [info]  [UhkHidDevice] Device communication closed.
+[2024-10-29 00:16:50.825] [info]  [DeviceOperation] Hardware config size: 64
+[2024-10-29 00:16:50.835] [info]  [UhkHidDevice] Available devices unchanged
+[2024-10-29 00:16:50.887] [info]  [UhkHidDevice] Used device: {"vendorId":"0x1D50","productId":"0x6122","path":"/dev/hidraw0","serialNumber":"","manufacturer":"Ultimate Gadget Laboratories","product":"UHK 60 v1","release":258,"interface":0,"usagePage":65280,"usage":1}
+[2024-10-29 00:16:50.892] [info]  [UhkHidDevice] Device communication closing.
+[2024-10-29 00:16:50.892] [info]  [UhkHidDevice] Device communication closed.
+[2024-10-29 00:16:50.906] [info]  [UhkHidDevice] Available devices unchanged
+[2024-10-29 00:16:50.957] [info]  [UhkHidDevice] Used device: {"vendorId":"0x1D50","productId":"0x6122","path":"/dev/hidraw0","serialNumber":"","manufacturer":"Ultimate Gadget Laboratories","product":"UHK 60 v1","release":258,"interface":0,"usagePage":65280,"usage":1}
+[2024-10-29 00:16:50.962] [info]  [DeviceOperation] right module deviceProtocolVersion: 4.8.0
+[2024-10-29 00:16:50.968] [info]  [DeviceOperation] Read "leftHalf" version information
+[2024-10-29 00:16:50.970] [info]  [DeviceOperation] Read "leftHalf" repo information
+[2024-10-29 00:16:50.990] [info]  [UhkHidDevice] Device communication closing.
+[2024-10-29 00:16:50.991] [info]  [UhkHidDevice] Device communication closed.
+[2024-10-29 00:16:50.991] [info]  [DeviceService] start poll UHK Device
+[2024-10-29 00:16:50.992] [info]  [DeviceRendererService] dispatch action [user-config] Load User Config from Device reply
+[2024-10-29 00:16:51.015] [info]  [SmartMacroDocRendererService] downloadDocumentation
+[2024-10-29 00:16:51.049] [info]  [UhkHidDevice] Available devices unchanged
+[2024-10-29 00:16:51.101] [info]  [UhkHidDevice] Used device: {"vendorId":"0x1D50","productId":"0x6122","path":"/dev/hidraw0","serialNumber":"","manufacturer":"Ultimate Gadget Laboratories","product":"UHK 60 v1","release":258,"interface":0,"usagePage":65280,"usage":1}
+[2024-10-29 00:16:54.838] [info]  [DeviceService] Operating system: Linux 6.11.5-3-cachyos x64
+[2024-10-29 00:16:54.839] [info]  [DeviceService] Agent version: 4.2.1
+[2024-10-29 00:16:54.839] [info]  [DeviceService] New firmware version: 11.2.0
+[2024-10-29 00:16:54.839] [info]  [DeviceService] New firmware user config version: 7.1.0
+[2024-10-29 00:16:54.858] [info]  [DeviceService] stop poll UHK Device
+[2024-10-29 00:16:54.858] [info]  [DeviceService] stopped poll UHK Device
+[2024-10-29 00:16:54.862] [info]  [DeviceOperation] right module deviceProtocolVersion: 4.8.0
+[2024-10-29 00:16:54.867] [info]  [DeviceRendererService] dispatch action [device] update firmware JSON
+[2024-10-29 00:16:54.868] [info]  [DeviceOperation] Read "leftHalf" version information
+[2024-10-29 00:16:54.870] [info]  [DeviceOperation] Read "leftHalf" repo information
+[2024-10-29 00:16:54.874] [info]  [DeviceService] UHK Device firmware upgrade starts: {"id":1,"name":"UHK 60 v1","vendorId":"0x1D50","keyboardPid":"0x6122","bootloaderPid":"0x6120","buspalPid":"0x6121"}
+[2024-10-29 00:16:54.875] [info]  [DeviceService] Device right firmware version: 9.1.2
+[2024-10-29 00:16:54.875] [info]  [UhkOperations] Start flashing right firmware
+[2024-10-29 00:16:54.876] [info]  [UhkOperations] Reenumerate bootloader
+[2024-10-29 00:16:54.876] [info]  [DeviceRendererService] dispatch action [device] currently updating module
+[2024-10-29 00:16:54.876] [info]  [UhkHidDevice] Start reenumeration, mode: Bootloader, timeout: 5000ms
+[2024-10-29 00:16:55.345] [info]  [UhkHidDevice] Could not find reenumerated device: Bootloader. Waiting...
+[2024-10-29 00:16:55.345] [info]  [UhkHidDevice] Available devices changed.
+[2024-10-29 00:16:55.346] [info]  [UhkHidDevice] Removed: {"vendorId":"0x1D50","productId":"0x6122","path":"/dev/hidraw0","serialNumber":"","manufacturer":"Ultimate Gadget Laboratories","product":"UHK 60 v1","release":258,"interface":0,"usagePage":65280,"usage":1}
+[2024-10-29 00:16:55.346] [info]  [UhkHidDevice] Removed: {"vendorId":"0x1D50","productId":"0x6122","path":"/dev/hidraw1","serialNumber":"","manufacturer":"Ultimate Gadget Laboratories","product":"UHK 60 v1","release":258,"interface":1,"usagePage":1,"usage":6}
+[2024-10-29 00:16:55.346] [info]  [UhkHidDevice] Removed: {"vendorId":"0x1D50","productId":"0x6122","path":"/dev/hidraw2","serialNumber":"","manufacturer":"Ultimate Gadget Laboratories","product":"UHK 60 v1","release":258,"interface":2,"usagePage":12,"usage":1}
+[2024-10-29 00:16:55.346] [info]  [UhkHidDevice] Removed: {"vendorId":"0x1D50","productId":"0x6122","path":"/dev/hidraw3","serialNumber":"","manufacturer":"Ultimate Gadget Laboratories","product":"UHK 60 v1","release":258,"interface":3,"usagePage":1,"usage":128}
+[2024-10-29 00:16:55.346] [info]  [UhkHidDevice] Removed: {"vendorId":"0x1D50","productId":"0x6122","path":"/dev/hidraw4","serialNumber":"","manufacturer":"Ultimate Gadget Laboratories","product":"UHK 60 v1","release":258,"interface":4,"usagePage":1,"usage":2}
+[2024-10-29 00:16:55.347] [info]  [UhkHidDevice] Removed: {"vendorId":"0x1D50","productId":"0x6122","path":"/dev/hidraw5","serialNumber":"","manufacturer":"Ultimate Gadget Laboratories","product":"UHK 60 v1","release":258,"interface":5,"usagePage":1,"usage":5}
+[2024-10-29 00:16:55.347] [info]  [UhkHidDevice] Added: {"vendorId":"0x1D50","productId":"0x6122","path":"/dev/hidraw2","serialNumber":"","manufacturer":"Ultimate Gadget Laboratories","product":"UHK 60 v1","release":258,"interface":-1}
+[2024-10-29 00:16:55.452] [info]  [UhkHidDevice] Could not find reenumerated device: Bootloader. Waiting...
+[2024-10-29 00:16:55.452] [info]  [UhkHidDevice] Available devices changed.
+[2024-10-29 00:16:55.452] [info]  [UhkHidDevice] Removed: {"vendorId":"0x1D50","productId":"0x6122","path":"/dev/hidraw2","serialNumber":"","manufacturer":"Ultimate Gadget Laboratories","product":"UHK 60 v1","release":258,"interface":-1}
+[2024-10-29 00:16:55.556] [info]  [UhkHidDevice] Could not find reenumerated device: Bootloader. Waiting...
+[2024-10-29 00:16:55.661] [info]  [UhkHidDevice] Could not find reenumerated device: Bootloader. Waiting...
+[2024-10-29 00:16:55.767] [info]  [UhkHidDevice] Could not find reenumerated device: Bootloader. Waiting...
+[2024-10-29 00:16:55.871] [info]  [UhkHidDevice] Could not find reenumerated device: Bootloader. Waiting...
+[2024-10-29 00:16:55.976] [info]  [UhkHidDevice] Could not find reenumerated device: Bootloader. Waiting...
+[2024-10-29 00:16:55.982] [info]  [UhkHidDevice] Reenumerating devices
+[2024-10-29 00:16:55.982] [info]  [UhkHidDevice] Device communication closing.
+[2024-10-29 00:16:55.982] [info]  [UhkHidDevice] Device communication closed.
+[2024-10-29 00:16:55.983] [info]  [UhkOperations] Waiting for bootloader
+[2024-10-29 00:16:56.989] [info]  [UhkOperations] Flash security disable
+[2024-10-29 00:16:57.050] [info]  [UhkOperations] Flash erase region
+[2024-10-29 00:16:58.263] [info]  [UhkOperations] Read RIGHT firmware from file
+[2024-10-29 00:16:58.326] [info]  [UhkOperations] Write memory
+[2024-10-29 00:17:00.561] [error] [SmartMacroService] download documentation failed HttpError: Connect Timeout Error
+    at /home/foxsae/Apps/UHK/squashfs-root/resources/app.asar/electron-main.js:8:888797
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Ir.pathExists.owner (/home/foxsae/Apps/UHK/squashfs-root/resources/app.asar/electron-main.js:2:618692)
+    at async Object.handleDownloadDocumentation (/home/foxsae/Apps/UHK/squashfs-root/resources/app.asar/electron-main.js:2:618643)
+    at async jr.process (/home/foxsae/Apps/UHK/squashfs-root/resources/app.asar/electron-main.js:2:460852)
+[2024-10-29 00:17:00.562] [info]  [SmartMacroService] start download firmware documentation {
+  firmwareGitRepo: 'UltimateHackingKeyboard/firmware',
+  firmwareGitTag: 'v9.1.2'
+}
+[2024-10-29 00:17:00.563] [info]  [SmartMacroService] firmware documentation downloading
+[2024-10-29 00:17:08.912] [info]  [UhkOperations] Reset bootloader
+[2024-10-29 00:17:08.913] [info]  [UhkOperations] Close communication channels
+[2024-10-29 00:17:08.914] [info]  [UhkOperations] Right firmware successfully flashed
+[2024-10-29 00:17:08.914] [info]  [DeviceService] Waiting for keyboard
+[2024-10-29 00:17:10.565] [error] [SmartMacroService] download documentation failed HttpError: Connect Timeout Error
+    at /home/foxsae/Apps/UHK/squashfs-root/resources/app.asar/electron-main.js:8:888797
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Ir.pathExists.owner (/home/foxsae/Apps/UHK/squashfs-root/resources/app.asar/electron-main.js:2:618692)
+    at async Object.handleDownloadDocumentation (/home/foxsae/Apps/UHK/squashfs-root/resources/app.asar/electron-main.js:2:618643)
+    at async jr.process (/home/foxsae/Apps/UHK/squashfs-root/resources/app.asar/electron-main.js:2:460852)
+[2024-10-29 00:17:15.884] [info]  [UhkHidDevice] Available devices changed.
+[2024-10-29 00:17:15.884] [info]  [UhkHidDevice] Added: {"vendorId":"0x1D50","productId":"0x6122","path":"/dev/hidraw0","serialNumber":"","manufacturer":"Ultimate Gadget Laboratories","product":"UHK 60 v1","release":258,"interface":0,"usagePage":1,"usage":6}
+[2024-10-29 00:17:15.884] [info]  [UhkHidDevice] Added: {"vendorId":"0x1D50","productId":"0x6122","path":"/dev/hidraw2","serialNumber":"","manufacturer":"Ultimate Gadget Laboratories","product":"UHK 60 v1","release":258,"interface":2,"usagePage":12,"usage":1}
+[2024-10-29 00:17:15.885] [info]  [UhkHidDevice] Added: {"vendorId":"0x1D50","productId":"0x6122","path":"/dev/hidraw3","serialNumber":"","manufacturer":"Ultimate Gadget Laboratories","product":"UHK 60 v1","release":258,"interface":3,"usagePage":1,"usage":128}
+[2024-10-29 00:17:15.885] [info]  [UhkHidDevice] Added: {"vendorId":"0x1D50","productId":"0x6122","path":"/dev/hidraw4","serialNumber":"","manufacturer":"Ultimate Gadget Laboratories","product":"UHK 60 v1","release":258,"interface":4,"usagePage":65280,"usage":1}
+[2024-10-29 00:17:15.936] [info]  [UhkHidDevice] Used device: {"vendorId":"0x1D50","productId":"0x6122","path":"/dev/hidraw4","serialNumber":"","manufacturer":"Ultimate Gadget Laboratories","product":"UHK 60 v1","release":258,"interface":4,"usagePage":65280,"usage":1}
+[2024-10-29 00:17:15.941] [info]  [DeviceOperation] right module deviceProtocolVersion: 4.10.0
+[2024-10-29 00:17:15.949] [info]  [DeviceOperation] Read "leftHalf" version information
+[2024-10-29 00:17:15.951] [info]  [DeviceOperation] Read "leftHalf" repo information
+[2024-10-29 00:17:15.955] [info]  [DeviceOperation] Read "leftHalf" firmware checksum
+[2024-10-29 00:17:15.960] [info]  [DeviceService] User configuration will be saved after right module firmware upgrade
+[2024-10-29 00:17:15.960] [info]  [DeviceRendererService] dispatch action [device] module info loaded
+[2024-10-29 00:17:15.961] [info]  [SmartMacroDocRendererService] downloadDocumentation
+[2024-10-29 00:17:15.967] [info]  [SmartMacroService] start download firmware documentation {
+  firmwareGitRepo: 'UltimateHackingKeyboard/firmware',
+  firmwareGitTag: 'v11.2.0'
+}
+[2024-10-29 00:17:15.968] [info]  [SmartMacroService] firmware documentation downloaded
+[2024-10-29 00:17:15.970] [info]  [SmartMacroService] reference manual downloaded
+[2024-10-29 00:17:15.972] [info]  [SmartMacroDocRendererService] dispatch action: [smart-macro-doc] download documentation success
+[2024-10-29 00:17:15.974] [info]  [SmartMacroDocRendererService] dispatch action: [smart-macro-doc] reference manual changed
+[2024-10-29 00:17:15.975] [info]  [MonacoEditorCompletionItemProvider] reference manual updated.
+[2024-10-29 00:17:16.112] [info]  Keyboard is busy, wait...
+[2024-10-29 00:17:16.315] [info]  [UhkHidDevice] Device communication closing.
+[2024-10-29 00:17:16.316] [info]  [UhkHidDevice] Device communication closed.
+[2024-10-29 00:17:16.316] [info]  [DeviceService] Left module firmware version:  9.1.2
+[2024-10-29 00:17:16.316] [info]  [DeviceService] Current left module firmware checksum:  UltimateHackingKeyboard/firmware
+[2024-10-29 00:17:16.316] [info]  [DeviceService] New left module firmware checksum:  dd7ff5a286e095919162500c3c6c31cd
+[2024-10-29 00:17:16.316] [info]  [UhkOperations] Start flashing "Left keyboard half" module firmware
+[2024-10-29 00:17:16.317] [info]  [UhkHidDevice] Start reenumeration, mode: NormalKeyboard, timeout: 5000ms
+[2024-10-29 00:17:16.322] [info]  [DeviceRendererService] dispatch action [device] currently updating module
+[2024-10-29 00:17:16.327] [info]  [UhkHidDevice] Reenumerating devices
+[2024-10-29 00:17:16.327] [info]  [UhkHidDevice] Device communication closing.
+[2024-10-29 00:17:17.339] [info]  [UhkHidDevice] Available devices unchanged
+[2024-10-29 00:17:17.391] [info]  [UhkHidDevice] Used device: {"vendorId":"0x1D50","productId":"0x6122","path":"/dev/hidraw4","serialNumber":"","manufacturer":"Ultimate Gadget Laboratories","product":"UHK 60 v1","release":258,"interface":4,"usagePage":65280,"usage":1}
+[2024-10-29 00:17:18.395] [info]  [UhkHidDevice] Device communication closing.
+[2024-10-29 00:17:18.396] [info]  [UhkHidDevice] Device communication closed.
+[2024-10-29 00:17:18.408] [info]  [UhkHidDevice] Available devices unchanged
+[2024-10-29 00:17:18.460] [info]  [UhkHidDevice] Used device: {"vendorId":"0x1D50","productId":"0x6122","path":"/dev/hidraw4","serialNumber":"","manufacturer":"Ultimate Gadget Laboratories","product":"UHK 60 v1","release":258,"interface":4,"usagePage":65280,"usage":1}
+[2024-10-29 00:17:18.461] [info]  [UhkHidDevice] Device communication closing.
+[2024-10-29 00:17:18.462] [info]  [UhkHidDevice] Device communication closed.
+[2024-10-29 00:17:18.462] [info]  [UhkHidDevice] Start reenumeration, mode: Buspal, timeout: 5000ms
+[2024-10-29 00:17:18.579] [info]  [UhkHidDevice] Available devices unchanged
+[2024-10-29 00:17:18.631] [info]  [UhkHidDevice] Used device: {"vendorId":"0x1D50","productId":"0x6122","path":"/dev/hidraw4","serialNumber":"","manufacturer":"Ultimate Gadget Laboratories","product":"UHK 60 v1","release":258,"interface":4,"usagePage":65280,"usage":1}
+[2024-10-29 00:17:18.969] [info]  [UhkHidDevice] Could not find reenumerated device: Buspal. Waiting...
+[2024-10-29 00:17:18.970] [info]  [UhkHidDevice] Available devices changed.
+[2024-10-29 00:17:18.970] [info]  [UhkHidDevice] Removed: {"vendorId":"0x1D50","productId":"0x6122","path":"/dev/hidraw0","serialNumber":"","manufacturer":"Ultimate Gadget Laboratories","product":"UHK 60 v1","release":258,"interface":0,"usagePage":1,"usage":6}
+[2024-10-29 00:17:18.970] [info]  [UhkHidDevice] Removed: {"vendorId":"0x1D50","productId":"0x6122","path":"/dev/hidraw1","serialNumber":"","manufacturer":"Ultimate Gadget Laboratories","product":"UHK 60 v1","release":258,"interface":1,"usagePage":1,"usage":2}
+[2024-10-29 00:17:18.970] [info]  [UhkHidDevice] Removed: {"vendorId":"0x1D50","productId":"0x6122","path":"/dev/hidraw2","serialNumber":"","manufacturer":"Ultimate Gadget Laboratories","product":"UHK 60 v1","release":258,"interface":2,"usagePage":12,"usage":1}
+[2024-10-29 00:17:18.970] [info]  [UhkHidDevice] Removed: {"vendorId":"0x1D50","productId":"0x6122","path":"/dev/hidraw3","serialNumber":"","manufacturer":"Ultimate Gadget Laboratories","product":"UHK 60 v1","release":258,"interface":3,"usagePage":1,"usage":128}
+[2024-10-29 00:17:18.971] [info]  [UhkHidDevice] Removed: {"vendorId":"0x1D50","productId":"0x6122","path":"/dev/hidraw4","serialNumber":"","manufacturer":"Ultimate Gadget Laboratories","product":"UHK 60 v1","release":258,"interface":4,"usagePage":65280,"usage":1}
+[2024-10-29 00:17:18.971] [info]  [UhkHidDevice] Added: {"vendorId":"0x1D50","productId":"0x6122","path":"/dev/hidraw1","serialNumber":"","manufacturer":"Ultimate Gadget Laboratories","product":"UHK 60 v1","release":258,"interface":-1}
+[2024-10-29 00:17:19.074] [info]  [UhkHidDevice] Could not find reenumerated device: Buspal. Waiting...
+[2024-10-29 00:17:19.075] [info]  [UhkHidDevice] Available devices changed.
+[2024-10-29 00:17:19.075] [info]  [UhkHidDevice] Removed: {"vendorId":"0x1D50","productId":"0x6122","path":"/dev/hidraw1","serialNumber":"","manufacturer":"Ultimate Gadget Laboratories","product":"UHK 60 v1","release":258,"interface":-1}
+[2024-10-29 00:17:19.178] [info]  [UhkHidDevice] Could not find reenumerated device: Buspal. Waiting...
+[2024-10-29 00:17:19.281] [info]  [UhkHidDevice] Could not find reenumerated device: Buspal. Waiting...
+[2024-10-29 00:17:19.386] [info]  [UhkHidDevice] Could not find reenumerated device: Buspal. Waiting...
+[2024-10-29 00:17:19.490] [info]  [UhkHidDevice] Could not find reenumerated device: Buspal. Waiting...
+[2024-10-29 00:17:19.595] [info]  [UhkHidDevice] Could not find reenumerated device: Buspal. Waiting...
+[2024-10-29 00:17:19.601] [info]  [UhkHidDevice] Reenumerating devices
+[2024-10-29 00:17:19.602] [info]  [UhkHidDevice] Device communication closing.
+[2024-10-29 00:17:19.602] [info]  [UhkHidDevice] Device communication closed.
+[2024-10-29 00:17:19.602] [info]  [UhkOperations] Waiting for buspal
+[2024-10-29 00:17:20.607] [info]  [UhkOperations] Try to connect to the "Left keyboard half"
+[2024-10-29 00:17:20.686] [info]  [UhkOperations] Waiting 1s to prevent node-hid race condition
+[2024-10-29 00:17:21.686] [info]  [UhkOperations] Flash erase all on "Left keyboard half" keyboard
+[2024-10-29 00:17:21.732] [info]  [UhkOperations] Read "Left keyboard half" firmware from file
+[2024-10-29 00:17:21.732] [info]  [UhkOperations] Write memory
+[2024-10-29 00:17:25.970] [info]  [UhkOperations] Reset "Left keyboard half" keyboard
+[2024-10-29 00:17:25.972] [info]  [UhkOperations] Close communication channels
+[2024-10-29 00:17:26.973] [info]  [UhkHidDevice] Start reenumeration, mode: NormalKeyboard, timeout: 5000ms
+[2024-10-29 00:17:26.979] [info]  [UhkHidDevice] Reenumerating devices
+[2024-10-29 00:17:26.979] [info]  [UhkHidDevice] Device communication closing.
+[2024-10-29 00:17:26.979] [info]  [UhkOperations] Waiting for normalKeyboard
+[2024-10-29 00:17:27.997] [info]  [UhkHidDevice] Available devices changed.
+[2024-10-29 00:17:27.998] [info]  [UhkHidDevice] Added: {"vendorId":"0x1D50","productId":"0x6122","path":"/dev/hidraw0","serialNumber":"","manufacturer":"Ultimate Gadget Laboratories","product":"UHK 60 v1","release":258,"interface":0,"usagePage":1,"usage":6}
+[2024-10-29 00:17:27.998] [info]  [UhkHidDevice] Added: {"vendorId":"0x1D50","productId":"0x6122","path":"/dev/hidraw2","serialNumber":"","manufacturer":"Ultimate Gadget Laboratories","product":"UHK 60 v1","release":258,"interface":2,"usagePage":12,"usage":1}
+[2024-10-29 00:17:27.998] [info]  [UhkHidDevice] Added: {"vendorId":"0x1D50","productId":"0x6122","path":"/dev/hidraw3","serialNumber":"","manufacturer":"Ultimate Gadget Laboratories","product":"UHK 60 v1","release":258,"interface":3,"usagePage":1,"usage":128}
+[2024-10-29 00:17:27.998] [info]  [UhkHidDevice] Added: {"vendorId":"0x1D50","productId":"0x6122","path":"/dev/hidraw4","serialNumber":"","manufacturer":"Ultimate Gadget Laboratories","product":"UHK 60 v1","release":258,"interface":4,"usagePage":65280,"usage":1}
+[2024-10-29 00:17:28.050] [info]  [UhkHidDevice] Used device: {"vendorId":"0x1D50","productId":"0x6122","path":"/dev/hidraw4","serialNumber":"","manufacturer":"Ultimate Gadget Laboratories","product":"UHK 60 v1","release":258,"interface":4,"usagePage":65280,"usage":1}
+[2024-10-29 00:17:28.052] [info]  [UhkHidDevice] Device communication closing.
+[2024-10-29 00:17:28.053] [info]  [UhkHidDevice] Device communication closed.
+[2024-10-29 00:17:29.064] [info]  [UhkHidDevice] Available devices unchanged
+[2024-10-29 00:17:29.116] [info]  [UhkHidDevice] Used device: {"vendorId":"0x1D50","productId":"0x6122","path":"/dev/hidraw4","serialNumber":"","manufacturer":"Ultimate Gadget Laboratories","product":"UHK 60 v1","release":258,"interface":4,"usagePage":65280,"usage":1}
+[2024-10-29 00:17:29.118] [info]  [UhkHidDevice] Device communication closing.
+[2024-10-29 00:17:29.119] [info]  [UhkHidDevice] Device communication closed.
+[2024-10-29 00:17:29.119] [info]  [UhkOperations] "Left keyboard half" firmware successfully flashed
+[2024-10-29 00:17:29.127] [info]  [UhkHidDevice] Available devices unchanged
+[2024-10-29 00:17:29.178] [info]  [UhkHidDevice] Used device: {"vendorId":"0x1D50","productId":"0x6122","path":"/dev/hidraw4","serialNumber":"","manufacturer":"Ultimate Gadget Laboratories","product":"UHK 60 v1","release":258,"interface":4,"usagePage":65280,"usage":1}
+[2024-10-29 00:17:29.184] [info]  [DeviceOperation] right module deviceProtocolVersion: 4.10.0
+[2024-10-29 00:17:29.194] [info]  [DeviceOperation] Read "leftHalf" version information
+[2024-10-29 00:17:29.197] [info]  [DeviceOperation] Read "leftHalf" repo information
+[2024-10-29 00:17:29.201] [info]  [DeviceOperation] Read "leftHalf" firmware checksum
+[2024-10-29 00:17:29.205] [info]  [SmartMacroCopy] start
+[2024-10-29 00:17:29.206] [info]  [SmartMacroCopy] copy {
+  destination: '/home/foxsae/.config/uhk-agent/smart-macro-docs/UltimateHackingKeyboard/firmware/v11.2.0',
+  smartMacroDocFirmwarePath: '/home/foxsae/Apps/UHK/squashfs-root/resources/packages/firmware/doc'
+}
+[2024-10-29 00:17:29.214] [info]  [SmartMacroCopy] done
+[2024-10-29 00:17:29.728] [info]  [DeviceService] start poll UHK Device
+[2024-10-29 00:17:29.730] [info]  [DeviceRendererService] dispatch action [device] update firmware reply
+[2024-10-29 00:17:29.731] [info]  [SmartMacroDocRendererService] downloadDocumentation
+[2024-10-29 00:17:29.732] [info]  [SmartMacroService] start download firmware documentation {
+  firmwareGitRepo: 'UltimateHackingKeyboard/firmware',
+  firmwareGitTag: 'v11.2.0'
+}
+[2024-10-29 00:17:29.732] [info]  [SmartMacroService] firmware documentation downloaded
+[2024-10-29 00:17:29.732] [info]  [SmartMacroService] reference manual downloaded
+[2024-10-29 00:17:29.742] [info]  [SmartMacroDocRendererService] dispatch action: [smart-macro-doc] download documentation success
+[2024-10-29 00:17:29.742] [info]  [SmartMacroDocRendererService] dispatch action: [smart-macro-doc] reference manual changed
+[2024-10-29 00:17:53.579] [info]  [DeviceRendererService] dispatch action [user-config] Load user configuration history success
+[2024-10-29 00:18:30.891] [info]  [WindowState] load settings
+[2024-10-29 00:18:30.891] [info]  [WindowState] loaded settings undefined
+[2024-10-29 00:18:30.892] [info]  [WindowState]save state not exists, use default
+[2024-10-29 00:18:30.892] [info]  [WindowState] save settings: { width: 1024, height: 768, isMaximized: true, isFullScreen: false }
+[2024-10-29 00:18:30.894] [info]  [WindowState] save settings success
+[2024-10-29 00:18:30.897] [info]  [Electron Main] win closed
+[2024-10-29 00:18:30.897] [info]  [DeviceService] stop poll UHK Device
+[2024-10-29 00:18:36.334] [info]  [Electron Main] command line arguments {}
+[2024-10-29 00:18:36.337] [info]  [Electron Main] init services.
+[2024-10-29 00:18:36.337] [info]  [Electron Main] packagesDir: /home/foxsae/Apps/UHK/squashfs-root/resources
+[2024-10-29 00:18:36.389] [info]  [Electron Main] Create new window.
+[2024-10-29 00:18:36.389] [info]  [WindowState] load settings
+[2024-10-29 00:18:36.390] [info]  [WindowState] loaded settings { width: 1024, height: 768, isMaximized: true, isFullScreen: false }
+[2024-10-29 00:18:36.391] [info]  [WindowState] loaded settings is visible false
+[2024-10-29 00:18:36.391] [info]  [WindowState] return with default settings
+[2024-10-29 00:18:36.391] [info]  [SmartMacroService] starting...
+[2024-10-29 00:18:36.391] [info]  [SmartMacroCopy] start
+[2024-10-29 00:18:36.423] [info]  [SmartMacroCopy] copy {
+  destination: '/home/foxsae/.config/uhk-agent/smart-macro-docs/UltimateHackingKeyboard/firmware/v11.2.0',
+  smartMacroDocFirmwarePath: '/home/foxsae/Apps/UHK/squashfs-root/resources/packages/firmware/doc'
+}
+[2024-10-29 00:18:36.437] [info]  [SmartMacroCopy] done
+[2024-10-29 00:18:36.437] [info]  [SmartMacroCopy] start copy loading.html
+[2024-10-29 00:18:36.438] [info]  [SmartMacroCopy] end copy loading.html
+[2024-10-29 00:18:36.447] [info]  [SmartMacroService] get free TCP port
+[2024-10-29 00:18:36.449] [info]  [SmartMacroService] acquired TCP port: 38463
+[2024-10-29 00:18:36.466] [info]  [SmartMacroService] started on 38463.
+[2024-10-29 00:18:36.505] [info]  [DeviceService] init success
+[2024-10-29 00:18:36.505] [info]  [AppUpdateService] init success
+[2024-10-29 00:18:36.505] [info]  [AppService] init success
+[2024-10-29 00:18:36.506] [info]  [SudoService] App root dir:  /home/foxsae/Apps/UHK/squashfs-root/resources
+[2024-10-29 00:18:36.521] [info]  [DeviceService] Udev info: Ok
+[2024-10-29 00:18:36.618] [info]  [AppService] get-config: application-settings
+[2024-10-29 00:18:36.619] [info]  [AppService] get-config of "application-settings": undefined
+[2024-10-29 00:18:36.807] [info]  [DeviceRendererService] init success 
+[2024-10-29 00:18:36.809] [info]  [AppRendererService] init success 
+[2024-10-29 00:18:36.821] [info]  [MonacoEditorCompletionItemProvider] initialized.
+[2024-10-29 00:18:36.821] [info]  [SmartMacroDocRendererService] init success
+[2024-10-29 00:18:36.822] [info]  Renderer appStart effect start
+[2024-10-29 00:18:36.823] [info]  [AppRendererService] getAppStartInfo
+[2024-10-29 00:18:36.823] [info]  Renderer appStart effect end
+[2024-10-29 00:18:36.823] [info]  [SmartMacroService] getAppStartInfo
+[2024-10-29 00:18:36.824] [info]  [AppService] getAppStartInfo
+[2024-10-29 00:18:36.825] [info]  [AppService] get-config: application-settings
+[2024-10-29 00:18:36.825] [info]  [AppService] getAppStartInfo response: {
+  commandLineArgs: { 'disable-agent-update-protection': false },
+  platform: 'linux',
+  osVersion: '6.11.5-3-cachyos',
+  udevFileContent: '# Ultimate Hacking Keyboard rules\n' +
+    '# These are the udev rules for accessing the USB interfaces of the UHK as non-root users.\n' +
+    '# Copy this file to /etc/udev/rules.d and physically reconnect the UHK afterwards.\n' +
+    'SUBSYSTEM=="input", ATTRS{idVendor}=="1d50", ATTRS{idProduct}=="612[0-7]", GROUP="input", MODE="0660"\n' +
+    'SUBSYSTEMS=="usb", ATTRS{idVendor}=="1d50", ATTRS{idProduct}=="612[0-7]", TAG+="uaccess"\n' +
+    'KERNEL=="hidraw*", ATTRS{idVendor}=="1d50", ATTRS{idProduct}=="612[0-7]", TAG+="uaccess"\n'
+}
+[2024-10-29 00:18:36.826] [info]  [AppUpdateService] check for update at startup: { checkForUpdateOnStartUp: true }
+[2024-10-29 00:18:36.827] [info]  [AppUpdateService] app started. Automatically check for update.
+[2024-10-29 00:18:36.827] [info]  APPIMAGE env is not defined, current application is not an AppImage
+[2024-10-29 00:18:36.827] [info]  [AppUpdateService] checkForUpdate success
+[2024-10-29 00:18:36.828] [info]  [AppService] get-config of "application-settings": undefined
+[2024-10-29 00:18:36.894] [info]  [SmartMacroDocRendererService] dispatch action: [smart-macro-doc] service listening
+[2024-10-29 00:18:36.895] [info]  [AppRendererService] dispatch action: [app] process start info
+[2024-10-29 00:18:36.895] [info]  [AppEffect][processStartInfo] payload: {
+  commandLineArgs: { 'disable-agent-update-protection': false },
+  platform: 'linux',
+  osVersion: '6.11.5-3-cachyos',
+  udevFileContent: '# Ultimate Hacking Keyboard rules\n' +
+    '# These are the udev rules for accessing the USB interfaces of the UHK as non-root users.\n' +
+    '# Copy this file to /etc/udev/rules.d and physically reconnect the UHK afterwards.\n' +
+    'SUBSYSTEM=="input", ATTRS{idVendor}=="1d50", ATTRS{idProduct}=="612[0-7]", GROUP="input", MODE="0660"\n' +
+    'SUBSYSTEMS=="usb", ATTRS{idVendor}=="1d50", ATTRS{idProduct}=="612[0-7]", TAG+="uaccess"\n' +
+    'KERNEL=="hidraw*", ATTRS{idVendor}=="1d50", ATTRS{idProduct}=="612[0-7]", TAG+="uaccess"\n'
+}
+[2024-10-29 00:18:36.897] [info]  [DeviceService] start poll UHK Device
+[2024-10-29 00:18:37.022] [info]  [UhkHidDevice] Devices before checking permission:
+[2024-10-29 00:18:37.031] [info]  [UhkHidDevice] Available devices changed.
+[2024-10-29 00:18:37.031] [info]  [UhkHidDevice] Added: {"vendorId":"0x1D50","productId":"0x6122","path":"/dev/hidraw0","serialNumber":"","manufacturer":"Ultimate Gadget Laboratories","product":"UHK 60 v1","release":258,"interface":0,"usagePage":1,"usage":6}
+[2024-10-29 00:18:37.031] [info]  [UhkHidDevice] Added: {"vendorId":"0x1D50","productId":"0x6122","path":"/dev/hidraw2","serialNumber":"","manufacturer":"Ultimate Gadget Laboratories","product":"UHK 60 v1","release":258,"interface":2,"usagePage":12,"usage":1}
+[2024-10-29 00:18:37.031] [info]  [UhkHidDevice] Added: {"vendorId":"0x1D50","productId":"0x6122","path":"/dev/hidraw3","serialNumber":"","manufacturer":"Ultimate Gadget Laboratories","product":"UHK 60 v1","release":258,"interface":3,"usagePage":1,"usage":128}
+[2024-10-29 00:18:37.031] [info]  [UhkHidDevice] Added: {"vendorId":"0x1D50","productId":"0x6122","path":"/dev/hidraw4","serialNumber":"","manufacturer":"Ultimate Gadget Laboratories","product":"UHK 60 v1","release":258,"interface":4,"usagePage":65280,"usage":1}
+[2024-10-29 00:18:37.103] [info]  [UhkHidDevice] Available devices unchanged
+[2024-10-29 00:18:37.155] [info]  [UhkHidDevice] Used device: {"vendorId":"0x1D50","productId":"0x6122","path":"/dev/hidraw4","serialNumber":"","manufacturer":"Ultimate Gadget Laboratories","product":"UHK 60 v1","release":258,"interface":4,"usagePage":65280,"usage":1}
+[2024-10-29 00:18:37.165] [info]  [DeviceOperation] right module deviceProtocolVersion: 4.10.0
+[2024-10-29 00:18:37.174] [info]  [DeviceOperation] Read "leftHalf" version information
+[2024-10-29 00:18:37.176] [info]  [DeviceOperation] Read "leftHalf" repo information
+[2024-10-29 00:18:37.181] [info]  [DeviceOperation] Read "leftHalf" firmware checksum
+[2024-10-29 00:18:37.185] [info]  [DeviceRendererService] dispatch action [device] connection state changed
+[2024-10-29 00:18:37.185] [info]  [DeviceService] Device connection state changed to: {
+  bootloaderActive: false,
+  communicationInterfaceAvailable: true,
+  hasPermission: true,
+  halvesInfo: {
+    areHalvesMerged: false,
+    isLeftHalfConnected: true,
+    leftModuleSlot: 0,
+    rightModuleSlot: 0
+  },
+  hardwareModules: {
+    moduleInfos: [
+      {
+        module: {
+          id: 1,
+          name: 'Left keyboard half',
+          slotId: 1,
+          i2cAddress: 16,
+          firmwareUpgradeSupported: true
+        },
+        info: {
+          moduleProtocolVersion: '4.3.0',
+          firmwareVersion: '11.2.0',
+          firmwareGitRepo: 'UltimateHackingKeyboard/firmware',
+          firmwareGitTag: 'v11.2.0',
+          firmwareChecksum: 'dd7ff5a286e095919162500c3c6c31cd'
+        }
+      }
+    ],
+    rightModuleInfo: {
+      firmwareVersion: '11.2.0',
+      deviceProtocolVersion: '4.10.0',
+      moduleProtocolVersion: '4.3.0',
+      modules: { '1': { md5: 'dd7ff5a286e095919162500c3c6c31cd' } },
+      userConfigVersion: '7.1.0',
+      hardwareConfigVersion: '1.0.0',
+      smartMacrosVersion: '2.5.0',
+      firmwareGitRepo: 'UltimateHackingKeyboard/firmware',
+      firmwareGitTag: 'v11.2.0',
+      firmwareChecksum: 'b1460bf39e6fd2ee2a8c9a29efc9c4e5'
+    }
+  },
+  isMacroStatusDirty: false,
+  multiDevice: false,
+  connectedDevice: {
+    id: 1,
+    name: 'UHK 60 v1',
+    vendorId: 7504,
+    keyboardPid: 24866,
+    bootloaderPid: 24864,
+    buspalPid: 24865
+  }
+}
+[2024-10-29 00:18:37.197] [info]  [SmartMacroDocRendererService] downloadDocumentation
+[2024-10-29 00:18:37.198] [info]  [SmartMacroService] start download firmware documentation {
+  firmwareGitRepo: 'UltimateHackingKeyboard/firmware',
+  firmwareGitTag: 'v11.2.0'
+}
+[2024-10-29 00:18:37.198] [info]  [DeviceService] stop poll UHK Device
+[2024-10-29 00:18:37.199] [info]  [DeviceService] stopped poll UHK Device
+[2024-10-29 00:18:37.199] [info]  [SmartMacroService] firmware documentation downloaded
+[2024-10-29 00:18:37.200] [info]  [SmartMacroService] reference manual downloaded
+[2024-10-29 00:18:37.201] [info]  [UhkHidDevice] Device communication closing.
+[2024-10-29 00:18:37.201] [info]  [UhkHidDevice] Device communication closed.
+[2024-10-29 00:18:37.202] [info]  [DeviceService] start poll UHK Device
+[2024-10-29 00:18:37.202] [info]  [DeviceService] load user configuration
+[2024-10-29 00:18:37.202] [info]  [DeviceService] stop poll UHK Device
+[2024-10-29 00:18:37.202] [info]  [DeviceService] stopped poll UHK Device
+[2024-10-29 00:18:37.214] [info]  [UhkHidDevice] Available devices unchanged
+[2024-10-29 00:18:37.222] [info]  [DeviceRendererService] dispatch action [device] Status buffer changed
+[2024-10-29 00:18:37.223] [info]  [SmartMacroDocRendererService] dispatch action: [smart-macro-doc] download documentation success
+[2024-10-29 00:18:37.225] [info]  [DeviceRendererService] dispatch action [device] Read config sizes reply
+[2024-10-29 00:18:37.226] [info]  [SmartMacroDocRendererService] dispatch action: [smart-macro-doc] reference manual changed
+[2024-10-29 00:18:37.227] [info]  [MonacoEditorCompletionItemProvider] reference manual updated.
+[2024-10-29 00:18:37.266] [info]  [UhkHidDevice] Used device: {"vendorId":"0x1D50","productId":"0x6122","path":"/dev/hidraw4","serialNumber":"","manufacturer":"Ultimate Gadget Laboratories","product":"UHK 60 v1","release":258,"interface":4,"usagePage":65280,"usage":1}
+[2024-10-29 00:18:37.273] [info]  [UhkHidDevice] Device communication closing.
+[2024-10-29 00:18:37.273] [info]  [UhkHidDevice] Device communication closed.
+[2024-10-29 00:18:37.273] [info]  [DeviceOperation] User config size: 32704
+[2024-10-29 00:18:37.279] [info]  [UhkHidDevice] Available devices unchanged
+[2024-10-29 00:18:37.331] [info]  [UhkHidDevice] Used device: {"vendorId":"0x1D50","productId":"0x6122","path":"/dev/hidraw4","serialNumber":"","manufacturer":"Ultimate Gadget Laboratories","product":"UHK 60 v1","release":258,"interface":4,"usagePage":65280,"usage":1}
+[2024-10-29 00:18:37.334] [info]  [DeviceOperation] userConfigSize: 4174
+[2024-10-29 00:18:37.468] [info]  [UhkHidDevice] Device communication closing.
+[2024-10-29 00:18:37.468] [info]  [UhkHidDevice] Device communication closed.
+[2024-10-29 00:18:37.469] [info]  [DeviceOperation] Hardware config size: 64
+[2024-10-29 00:18:37.474] [info]  [UhkHidDevice] Available devices unchanged
+[2024-10-29 00:18:37.526] [info]  [UhkHidDevice] Used device: {"vendorId":"0x1D50","productId":"0x6122","path":"/dev/hidraw4","serialNumber":"","manufacturer":"Ultimate Gadget Laboratories","product":"UHK 60 v1","release":258,"interface":4,"usagePage":65280,"usage":1}
+[2024-10-29 00:18:37.531] [info]  [UhkHidDevice] Device communication closing.
+[2024-10-29 00:18:37.532] [info]  [UhkHidDevice] Device communication closed.
+[2024-10-29 00:18:37.543] [info]  [UhkHidDevice] Available devices unchanged
+[2024-10-29 00:18:37.594] [info]  [UhkHidDevice] Used device: {"vendorId":"0x1D50","productId":"0x6122","path":"/dev/hidraw4","serialNumber":"","manufacturer":"Ultimate Gadget Laboratories","product":"UHK 60 v1","release":258,"interface":4,"usagePage":65280,"usage":1}
+[2024-10-29 00:18:37.599] [info]  [DeviceOperation] right module deviceProtocolVersion: 4.10.0
+[2024-10-29 00:18:37.607] [info]  [DeviceOperation] Read "leftHalf" version information
+[2024-10-29 00:18:37.609] [info]  [DeviceOperation] Read "leftHalf" repo information
+[2024-10-29 00:18:37.613] [info]  [DeviceOperation] Read "leftHalf" firmware checksum
+[2024-10-29 00:18:37.633] [info]  [UhkHidDevice] Device communication closing.
+[2024-10-29 00:18:37.634] [info]  [UhkHidDevice] Device communication closed.
+[2024-10-29 00:18:37.634] [info]  [DeviceService] start poll UHK Device
+[2024-10-29 00:18:37.635] [info]  [DeviceRendererService] dispatch action [user-config] Load User Config from Device reply
+[2024-10-29 00:18:37.660] [info]  [SmartMacroDocRendererService] downloadDocumentation
+[2024-10-29 00:18:37.661] [info]  [SmartMacroService] start download firmware documentation {
+  firmwareGitRepo: 'UltimateHackingKeyboard/firmware',
+  firmwareGitTag: 'v11.2.0'
+}
+[2024-10-29 00:18:37.661] [info]  [SmartMacroService] firmware documentation downloaded
+[2024-10-29 00:18:37.661] [info]  [SmartMacroService] reference manual downloaded
+[2024-10-29 00:18:37.680] [info]  [SmartMacroDocRendererService] dispatch action: [smart-macro-doc] download documentation success
+[2024-10-29 00:18:37.681] [info]  [SmartMacroDocRendererService] dispatch action: [smart-macro-doc] reference manual changed
+[2024-10-29 00:18:37.682] [info]  [AppEffects] navigate to { commands: [ '/' ] }
+[2024-10-29 00:18:37.711] [info]  [UhkHidDevice] Available devices unchanged
+[2024-10-29 00:18:37.764] [info]  [UhkHidDevice] Used device: {"vendorId":"0x1D50","productId":"0x6122","path":"/dev/hidraw4","serialNumber":"","manufacturer":"Ultimate Gadget Laboratories","product":"UHK 60 v1","release":258,"interface":4,"usagePage":65280,"usage":1}
+[2024-10-29 00:18:52.897] [info]  [WindowState] load settings
+[2024-10-29 00:18:52.897] [info]  [WindowState] loaded settings { width: 1024, height: 768, isMaximized: true, isFullScreen: false }
+[2024-10-29 00:18:52.898] [info]  [WindowState] loaded settings is visible false
+[2024-10-29 00:18:52.898] [info]  [WindowState] return with default settings
+[2024-10-29 00:18:52.898] [info]  [WindowState] save settings: { width: 1024, height: 768, isMaximized: true, isFullScreen: false }
+[2024-10-29 00:18:52.902] [info]  [WindowState] save settings success
+[2024-10-29 00:18:52.905] [info]  [Electron Main] win closed
+[2024-10-29 00:18:52.906] [info]  [DeviceService] stop poll UHK Device
+[2024-10-29 00:18:52.906] [info]  [DeviceService] stopped poll UHK Device
+[2024-10-29 00:18:52.906] [info]  [DeviceService] Device connection checker stopped.
+[2024-10-29 00:18:52.906] [info]  [UhkHidDevice] Device communication closing.
+[2024-10-29 00:18:52.907] [info]  [UhkHidDevice] Device communication closed.
+[2024-10-29 00:18:52.907] [info]  [SmartMacroService] stopping...
+[2024-10-29 00:18:52.908] [info]  [SmartMacroService] stopped.

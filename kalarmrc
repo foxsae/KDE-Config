@@ -1,0 +1,17 @@
+[General]
+AutoStart=true
+Backend=FileResources
+Version=3.9.2
+
+[MainWindow]
+ToolBarsMovable=Disabled
+
+[Notification Messages]
+ConfirmAlarmDeletion=true
+EmailQueuedNotify=false
+QuitWarn=
+
+[View]
+DateNavigatorTop=true
+ShowDateNavigator=false
+ShowResources=false

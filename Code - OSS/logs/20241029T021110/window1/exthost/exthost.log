@@ -1,0 +1,10 @@
+2024-10-29 02:11:11.743 [info] Extension host with pid 9993 started
+2024-10-29 02:11:11.743 [info] Skipping acquiring lock for /home/foxsae/.config/Code - OSS/User/workspaceStorage/13b6cdce7a98fd21c2b1c810facbb0be.
+2024-10-29 02:11:11.756 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*'
+2024-10-29 02:11:11.763 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2024-10-29 02:11:11.790 [info] Eager extensions activated
+2024-10-29 02:11:11.792 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2024-10-29 02:11:11.793 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2024-10-29 02:11:16.515 [info] ExtensionService#_doActivateExtension vscode.git, startup: false, activationEvent: 'api', root cause: vscode.github
+2024-10-29 02:11:18.560 [info] Extension host terminating: renderer closed the MessagePort
+2024-10-29 02:11:18.566 [info] Extension host with pid 9993 exiting with code 0

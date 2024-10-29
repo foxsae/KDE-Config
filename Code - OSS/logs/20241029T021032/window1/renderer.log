@@ -1,0 +1,4 @@
+2024-10-29 02:10:33.732 [info] Started local extension host with pid 9684.
+2024-10-29 02:10:33.771 [info] Started initializing default profile extensions in extensions installation folder. file:///home/foxsae/.vscode-oss/extensions
+2024-10-29 02:10:33.911 [info] Completed initializing default profile extensions in extensions installation folder. file:///home/foxsae/.vscode-oss/extensions
+2024-10-29 02:10:36.749 [info] [perf] Render performance baseline is 38ms
